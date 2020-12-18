@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_goneMarginEnd="8dp"
+    app:layout_goneMarginStart="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/light_purple"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/marvel_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="3dp"
+            android:layout_weight="0"
+            android:contentDescription="Marvel Character Image"/>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/marvel_name"
+                android:layout_width="match_parent"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/marvel_description"
+                android:layout_width="match_parent"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
